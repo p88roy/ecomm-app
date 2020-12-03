@@ -56,8 +56,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 	</script>
 	<!-- start-smoth-scrolling -->
-	<script src="//assets.adobedtm.com/224be2da76aa/e73d29da9221/launch-2f909796d372-development.min.js" async></script>
-	<!--Data Layer to enable rich data collection and targeting-->
+	<script>
+		<!--Data Layer to enable rich data collection and targeting-->
 	<script>
 		var digitalData =
 		{
@@ -73,6 +73,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		};
 	</script>
 	<!--/Data Layer-->
+	
+    //prehiding snippet for Adobe Target with asynchronous Launch deployment
+    (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
+</script>
+
+	<script src="//assets.adobedtm.com/224be2da76aa/e73d29da9221/launch-2f909796d372-development.min.js" async></script>
+	
 </head>
 
 <body>
@@ -84,7 +91,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3l_search">
 			<!-- <form method="post" action="products.html" -->
 			<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';"
-				onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
 			<input type="submit" value=" " id="searchButton">
 			<!--</form>-->
 		</div>
