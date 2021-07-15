@@ -48,11 +48,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 	
 <script>
+	var pathNm = window.location.pathname;
+	var pageNm = $(location).attr("href").split('.html')[0].split('/')[3];
+	var pageTl = document.title.split('Flat')[0].trim();  
+	
      window.dataLayer = window.dataLayer || [];
      window.dataLayer.push [{
-       	'pathName': window.location.pathname,
-	'pageName': $(location).attr("href").split('.html')[0].split('/')[3],
-	'pageTitle': document.title.split('Flat')[0].trim();     
+       	'pathName': pathNm,
+	'pageName': pageNm,
+	'pageTitle': pageTl    
      }];
 </script>
 	
